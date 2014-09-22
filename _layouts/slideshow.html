@@ -6,9 +6,8 @@
 <link rel="apple-touch-icon" href="/ducky-iphone.png" />
 <link rel="shortcut icon" href="/favicon.ico" />
 
-<link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
-<link rel="stylesheet" href=t"heme/supersized.shutter.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
@@ -29,24 +28,20 @@
 
 </script>
 
+<style type="text/css">
+  ul#demo-block{ margin:0 15px 15px 15px; }
+    ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+    ul#demo-block li a{ color:#eee; font-weight:bold; }
+</style>
+
+
 </head>
 
 <body>
 
-<div id="Content">
-
-
-<h1 id="headline" data-org="Remembering Johnny">Remembering Johnny</h1>
-
-{% include nav.html %}
-
 {{page.content}}
-</div>
 
-<div id="footer">
-
-
-</div>
+</body>
 
 </body>
 </html>

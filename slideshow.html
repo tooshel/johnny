@@ -1,0 +1,108 @@
+---
+layout: slideshow
+title: Remembering Johnny
+---
+<script type="text/javascript">
+  
+  jQuery(function($){
+    
+    $.supersized({
+    
+      // Functionality
+      slide_interval          :   5000,   // Length between transitions
+      transition              :   1,      // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+      transition_speed    : 700,    // Speed of transition
+                             
+      // Components             
+      slide_links       : 'blank',  // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+      slides          :   [     
+      { image : 'johnny/Chillazing-in-the-spa-in-prescott-cropped.jpg', 
+        title : 'Chillazing in the spa in prescott cropped', 
+        thumb : 'johnny/Chillazing-in-the-spa-in-prescott-cropped.jpg', 
+        url : ''
+      },
+      { image : 'johnny/Happy-with-embrie-in-shades-cropped.jpg', 
+        title : 'Happy with embrie in shades cropped', 
+        thumb : 'johnny/Happy-with-embrie-in-shades-cropped.jpg', 
+        url : ''
+      },
+      { image : 'johnny/Blurry-but-has-the-car-and-the-dog-and-embrie-cropped.jpg', 
+        title : 'Blurry but has the car and the dog and embrie cropped', 
+        thumb : 'johnny/Blurry-but-has-the-car-and-the-dog-and-embrie-cropped.jpg', 
+        url : ''
+      },
+      { image : 'johnny/In-front-of-the-jeep.jpg', 
+        title : 'In front of the jeep', 
+        thumb : 'johnny/In-front-of-the-jeep.jpg', 
+        url : ''
+      },
+      { image : 'johnny/Relaxing-on-the-patio-with-embrie-cropped.jpg', 
+        title : 'Relaxing on the patio with embrie cropped', 
+        thumb : 'johnny/Relaxing-on-the-patio-with-embrie-cropped.jpg', 
+        url : ''
+      },
+      { image : 'johnny/Swimming-with-nudie-embire-cropped.jpg', 
+        title : 'Swimming with nudie embire cropped', 
+        thumb : 'johnny/Swimming-with-nudie-embire-cropped.jpg', 
+        url : ''
+      },
+      { image : 'johnny/Typical-johnny-stare-cropped.jpg', 
+        title : 'Typical johnny stare cropped', 
+        thumb : 'johnny/Typical-johnny-stare-cropped.jpg', 
+        url : ''
+      },
+      { image : 'johnny/Working-on-the-yard-with-embrie.jpg', 
+        title : 'Working on the yard with embrie', 
+        thumb : 'johnny/Working-on-the-yard-with-embrie.jpg', 
+        url : ''
+      }
+
+
+      ]
+      
+    });
+  });
+    
+</script>
+
+<!--Thumbnail Navigation-->
+<div id="prevthumb"></div>
+<div id="nextthumb"></div>
+
+<!--Arrow Navigation-->
+<a id="prevslide" class="load-item"></a>
+<a id="nextslide" class="load-item"></a>
+
+<div id="thumb-tray" class="load-item">
+  <div id="thumb-back"></div>
+  <div id="thumb-forward"></div>
+</div>
+
+<!--Time Bar-->
+<!-- 
+<div id="progress-back" class="load-item">
+  <div id="progress-bar"></div>
+</div>
+ -->
+<!--Control Bar-->
+<div id="controls-wrapper" class="load-item">
+  <div id="controls">
+    
+    <a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+  
+    <!--Slide counter-->
+    <div id="slidecounter">
+      <span class="slidenumber"></span> / <span class="totalslides"></span>
+    </div>
+    
+    <!--Slide captions displayed here-->
+    <div id="slidecaption"></div>
+    
+    <!--Thumb Tray button-->
+    <a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+    
+    <!--Navigation-->
+    <ul id="slide-list"></ul>
+    
+  </div>
+</div>
